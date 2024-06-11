@@ -14,7 +14,7 @@ mongoose.connect(connectionURL)
     });
 
 const recipeSchema = new mongoose.Schema({
-    id: String,
+    id: { type: String, unique: true },
     title: String,
     ingredients: [String],
     instructions: String,
