@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>${recipe.title}</td>
                         <td>${recipe.ingredients.join(', ')}</td>
                         <td>${recipe.instructions}</td>
-                        <td>${recipe.cookingTime}</td>
+                        <td class="cooking-time-cell">${recipe.cookingTime}</td>
                         <td>
                             <button onclick="editRecipe('${recipe._id}')">Update</button>
                             <button onclick="deleteRecipe('${recipe._id}')">Delete</button>
